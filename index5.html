@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+  .c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Serenity Haven Hotel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Book a Tour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Spa and Wellness Retreat</a></li>
+                  <li><a class="dropdown-item" href="#"> Concierge Assistance</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Gourmet Dining Experience</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<div class="container-fluid">
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" class="d-block w-100 c-img" alt="Slide 1">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="mt-5 fs-3 text-uppercase">A sense of tranquility and relaxation</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Serenity Haven Hotel</h1>
+          <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button> -->
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book a tour
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="https://instatravelstyle.com/wp-content/uploads/2023/09/blog-pst.jpg" class="d-block w-100 c-img" alt="Slide 2">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+          <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book a tour
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/149557951.jpg?k=7b45d5949bbe39c96a50680a560b957b5c5b1ae6feabea91c070cc446c7729d8&o=&hp=1" class="d-block w-100 c-img" alt="Slide 3">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+          <p class="display-1 fw-bolder text-capitalize">Embark on thrilling guided tours</p>
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book a tour
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">            
+                    <form action="#" class="form_width">
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Name: </label>
+                            <input type="text" class="form-control">
+                        </div>
+            
+                        <div class="mb-2">
+                            <label for="email" class="form-label">email: </label>
+                            <input type="email" class="form-control">
+                        </div>
+            
+                        <div class="mb-2">
+                            <div class="form-floating">
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                              <label for="floatingTextarea2">Message: </label>
+                            </div>
+                        </div>
+            
+                        <div class="mb-2">
+                            <label for="name" class="form-check-label">Check</label>
+                            <input type="checkbox" class="form-check-input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center display-1"> Our Customer Services</h2>
+
+      <div class="container-fluid">
+        
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://sthotelsmalta.com/wp-content/uploads/2022/06/modern-luxury-bedroom-suite-and-bathroom-with-working-table-scaled.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Moderate Room Service</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab nisi quasi quisquam, facere pariatur nobis cupiditate aliquid explicabo alias doloribus mollitia? Voluptatem ullam, corporis dolores alias labore incidunt. Quod, tempore!</p>
+            </div>
+            <!-- <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button> -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/251694878.jpg?k=2c5064ede594514bb8b158234adac86c27a856b6ad45d2d2689b50c23c6172f7&o=&hp=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Clean Rooms</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dolor at cumque voluptas, atque voluptatum maxime explicabo iusto quos, et soluta officiis provident excepturi porro? Rerum vitae aspernatur totam ducimus!</p>
+            </div>
+            <!-- <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button> -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/251694699.jpg?k=e68976fe81e9b4c5ebdfb4b07de6bfa9621c13fff93dc1c133b7c157ec0daaab&o=&hp=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UUpdated Power Systems</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt inventore dolorum, laudantium culpa unde. Rerum qui nobis tempore, cum tenetur laudantium dolores nisi, et possimus amet nostrum, rem quae.</p>
+            </div>
+            <!-- <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button> -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      
+      <div class="container-fluid">
+        <h2 class="text-center display-1">Clients across the globe</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>Name</td>
+                    <td>Category</td>
+                    <td>Address</td>
+                    <td>email</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Transcorp</td>
+                    <td>Hotels</td>
+                    <td>15.area2 street</td>
+                    <td>abc@gmail.com</td>
+                </tr>
+ 
+                <tr>
+                    <td>2</td>
+                    <td>SilverBird</td>
+                    <td>Movies</td>
+                    <td>18. lagos street</td>
+                    <td>abc@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>SahadStores</td>
+                    <td>Shopping</td>
+                    <td>92. garki street</td>
+                    <td>abc@gmail.com</td>
+                </tr>   
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+      <h2 class="display-2 text-center">Services We Provide</h2>
+      
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Spa and Wellness Retreat
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>Spa and Wellness Retreat:</strong> Indulge in rejuvinating spa treatments and wellness programs to relax and rejuvenate
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Gourmet Dining Experience
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>Gourmet Dining Experience</strong> Delight your palate with exquisite culinary creations at our on-site resturants, offering a diverse range of flavors and cuisines.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Concierge Assistance
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>Concierge Assistance</strong> Our dedicated concierge team is available around the clock to assist you with personalized recommendations, reservations, and personalized recommendations, reservations, and any other assistance you may need during your Stay.
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>"Escape the ordinary and embrace the extraordinary moments awaiting you at Serenity Haven Hotel"</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Seth Rogan <cite title="Source Title">New York Times</cite>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="container">
+      <h1 class="display-1 text-center fa-bold"> Meet With Us</h1>
+      <form action="#" class="form_width">
+        <div class="mb-2">
+            <label for="name" class="form-label">Name: </label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+            <label for="email" class="form-label">email: </label>
+            <input type="email" class="form-control">
+        </div>
+
+        <div class="mb-2">
+            <label for="Phone" class="form-label">phone: </label>
+            <input type="number" class="form-control">
+        </div>
+
+        <div class="mb-2">
+            <label for="name" class="form-check-label">Check</label>
+            <input type="checkbox" class="form-check-input">
+        </div>
+
+        <button class="btn bg-success-subtle btn-block">SignUp</button>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
