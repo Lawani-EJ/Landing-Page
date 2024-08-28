@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Haven Hotel</title>
     <link rel="shortcut icon" href="./assets/S.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+  </head>
+  <style>
   .c-item {
   height: 480px;
 }
@@ -27,186 +33,241 @@
   font-style: normal;
 }
 </style>
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-auto nanum-myeongjo-regular" href="#">
-            <img src="./assets//S-removebg-preview.png" alt="Logo" width="50" height="50">
-            Serenity Haven Hotel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-4 justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-                            <li class="nav-item">
-                <a class="nav-link" href="#">Book a Tour</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Spa and Wellness Retreat</a></li>
-                  <li><a class="dropdown-item" href="#"> Concierge Assistance</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Gourmet Dining Experience</a></li>
-                </ul>
-              </li>
-              <!-- <li class="nav-item">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto nanum-myeongjo-regular" href="#">
+          <img src="./assets//S-removebg-preview.png" alt="Logo" width="50"
+            height="50">
+          Serenity Haven Hotel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-4 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tour.html">Book a Tour</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Spa and Wellness
+                    Retreat</a></li>
+                <li><a class="dropdown-item" href="#"> Concierge
+                    Assistance</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gourmet Dining
+                    Experience</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li> -->
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success me-1" type="submit">Search</button>
-              <button class="btn btn-outline-secondary me-2" type="submit">Login</button>
-              <button class="btn btn-warning" type="submit">SignUp</button>
-            </form>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn-outline-success me-1"
+              type="submit">Search</button>
+            <button class="btn btn-outline-secondary me-2"
+              type="submit">Login</button>
+            <button class="btn btn-warning" type="submit">SignUp</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel"
+            data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel"
+            data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel"
+            data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"
+              class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">A sense of tranquility and
+                relaxation</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Serenity Haven
+                Hotel</h1>
+              <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button> -->
+              <button type="button" class="btn btn-primary "
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Book a tour
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="https://instatravelstyle.com/wp-content/uploads/2023/09/blog-pst.jpg"
+              class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+              <p class="display-1 fw-bolder text-capitalize">3 available
+                tours</p>
+              <button type="button" class="btn btn-primary "
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Book a tour
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/149557951.jpg?k=7b45d5949bbe39c96a50680a560b957b5c5b1ae6feabea91c070cc446c7729d8&o=&hp=1"
+              class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+              <p class="display-1 fw-bolder text-capitalize">Embark on thrilling
+                guided tours</p>
+              <button type="button" class="btn btn-primary "
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Book a tour
+              </button>
+            </div>
           </div>
         </div>
-      </nav>
-
-<div class="container-fluid">
-  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" class="d-block w-100 c-img" alt="Slide 1">
-        <div class="carousel-caption top-0 mt-4">
-          <p class="mt-5 fs-3 text-uppercase">A sense of tranquility and relaxation</p>
-          <h1 class="display-1 fw-bolder text-capitalize">Serenity Haven Hotel</h1>
-          <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button> -->
-          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Book a tour
-          </button>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="https://instatravelstyle.com/wp-content/uploads/2023/09/blog-pst.jpg" class="d-block w-100 c-img" alt="Slide 2">
-        <div class="carousel-caption top-0 mt-4">
-          <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
-          <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
-          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Book a tour
-          </button>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/149557951.jpg?k=7b45d5949bbe39c96a50680a560b957b5c5b1ae6feabea91c070cc446c7729d8&o=&hp=1" class="d-block w-100 c-img" alt="Slide 3">
-        <div class="carousel-caption top-0 mt-4">
-          <p class="text-uppercase fs-3 mt-5">Destination activities</p>
-          <p class="display-1 fw-bolder text-capitalize">Embark on thrilling guided tours</p>
-          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Book a tour
-          </button>
-        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Details</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">            
-                    <form action="#" class="form_width">
-                        <div class="mb-2">
-                            <label for="name" class="form-label">Name: </label>
-                            <input type="text" class="form-control">
-                        </div>
-            
-                        <div class="mb-2">
-                            <label for="email" class="form-label">email: </label>
-                            <input type="email" class="form-control">
-                        </div>
-            
-                        <div class="mb-2">
-                            <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                              <label for="floatingTextarea2">Message: </label>
-                            </div>
-                        </div>
-            
-                        <div class="mb-2">
-                            <label for="name" class="form-check-label">Check</label>
-                            <input type="checkbox" class="form-check-input">
-                        </div>
-                    </form>
+    <div class="modal fade" id="exampleModal" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Enter
+              Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="#" class="form_width">
+                <div class="mb-2">
+                  <label for="name" class="form-label">Name: </label>
+                  <input type="text" class="form-control">
                 </div>
+
+                <div class="mb-2">
+                  <label for="email" class="form-label">email: </label>
+                  <input type="email" class="form-control">
+                </div>
+
+                <div class="mb-2">
+                  <div class="form-floating">
+                    <textarea class="form-control"
+                      placeholder="Leave a comment here" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Message: </label>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <label for="name" class="form-check-label">Check</label>
+                  <input type="checkbox" class="form-check-input">
+                </div>
+              </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
-
-
-      <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://media.istockphoto.com/id/1428092971/photo/happy-family-getting-key-card-at-hotels-front-desk.jpg?s=612x612&w=0&k=20&c=JHxeMhPIEAKdT88slhyKGHEwJrZrLuBDuN-AfQ0lMlU=" class="d-block mx-lg-auto img-fluid" alt="Serenity Heaven Hotels" width="700" height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to Serenity Heaven Hotels</h1>
-            <p class="lead">Experience the ultimate in luxury and comfort at Serenity Heaven Hotels. Our hotel offers top-notch amenities, breathtaking views, and unparalleled service, ensuring that your stay is nothing short of exceptional.</p>
-        </div>
     </div>
-</div>
 
-
-<div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row align-items-center g-5 py-5">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/09/GettyImages-1428676905.jpg" class="d-block mx-lg-auto img-fluid" alt="Serenity Heaven Hotels" width="700" height="500" loading="lazy">
+          <img
+            src="https://media.istockphoto.com/id/1428092971/photo/happy-family-getting-key-card-at-hotels-front-desk.jpg?s=612x612&w=0&k=20&c=JHxeMhPIEAKdT88slhyKGHEwJrZrLuBDuN-AfQ0lMlU="
+            class="d-block mx-lg-auto img-fluid" alt="Serenity Heaven Hotels"
+            width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Experience Luxury Like Never Before</h1>
-            <p class="lead">Serenity Heaven Hotels offers the perfect blend of elegance and comfort. Immerse yourself in our exquisite accommodations, designed to provide an unforgettable stay with the finest amenities and exceptional service.</p>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to
+            Serenity Heaven Hotels</h1>
+          <p class="lead">Experience the ultimate in luxury and comfort at
+            Serenity Heaven Hotels. Our hotel offers top-notch amenities,
+            breathtaking views, and unparalleled service, ensuring that your
+            stay is nothing short of exceptional.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/09/GettyImages-1428676905.jpg"
+            class="d-block mx-lg-auto img-fluid" alt="Serenity Heaven Hotels"
+            width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Experience
+            Luxury Like Never Before</h1>
+          <p class="lead">Serenity Heaven Hotels offers the perfect blend of
+            elegance and comfort. Immerse yourself in our exquisite
+            accommodations, designed to provide an unforgettable stay with the
+            finest amenities and exceptional service.</p>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">About Us</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+          <button type="button"
+            class="btn btn-primary btn-lg px-4 me-md-2">About Us</button>
+          <button type="button"
+            class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
         </div>
+      </div>
     </div>
-</div>
 
+    <h2 class="text-center display-1"> Our Customer Services</h2>
+    <div class="container-fluid">
 
-      <h2 class="text-center display-1"> Our Customer Services</h2>
-      <div class="container-fluid">
-        
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="https://sthotelsmalta.com/wp-content/uploads/2022/06/modern-luxury-bedroom-suite-and-bathroom-with-working-table-scaled.jpg" class="card-img-top" alt="...">
+            <img
+              src="https://sthotelsmalta.com/wp-content/uploads/2022/06/modern-luxury-bedroom-suite-and-bathroom-with-working-table-scaled.jpg"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Moderate Room Service</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab nisi quasi quisquam, facere pariatur nobis cupiditate aliquid explicabo alias doloribus mollitia? Voluptatem ullam, corporis dolores alias labore incidunt. Quod, tempore!</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Ab nisi quasi quisquam, facere pariatur nobis
+                cupiditate aliquid explicabo alias doloribus mollitia?
+                Voluptatem ullam, corporis dolores alias labore incidunt. Quod,
+                tempore!</p>
             </div>
             <!-- <button type="button" class="btn btn-primary position-relative">
                 Inbox
@@ -222,10 +283,15 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/251694878.jpg?k=2c5064ede594514bb8b158234adac86c27a856b6ad45d2d2689b50c23c6172f7&o=&hp=1" class="card-img-top" alt="...">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/251694878.jpg?k=2c5064ede594514bb8b158234adac86c27a856b6ad45d2d2689b50c23c6172f7&o=&hp=1"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Clean Rooms</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dolor at cumque voluptas, atque voluptatum maxime explicabo iusto quos, et soluta officiis provident excepturi porro? Rerum vitae aspernatur totam ducimus!</p>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ut dolor at cumque voluptas, atque voluptatum
+                maxime explicabo iusto quos, et soluta officiis provident
+                excepturi porro? Rerum vitae aspernatur totam ducimus!</p>
             </div>
             <!-- <button type="button" class="btn btn-primary position-relative">
                 Inbox
@@ -241,10 +307,15 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/251694699.jpg?k=e68976fe81e9b4c5ebdfb4b07de6bfa9621c13fff93dc1c133b7c157ec0daaab&o=&hp=1" class="card-img-top" alt="...">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/251694699.jpg?k=e68976fe81e9b4c5ebdfb4b07de6bfa9621c13fff93dc1c133b7c157ec0daaab&o=&hp=1"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">UUpdated Power Systems</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt inventore dolorum, laudantium culpa unde. Rerum qui nobis tempore, cum tenetur laudantium dolores nisi, et possimus amet nostrum, rem quae.</p>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Quae nesciunt inventore dolorum, laudantium
+                culpa unde. Rerum qui nobis tempore, cum tenetur laudantium
+                dolores nisi, et possimus amet nostrum, rem quae.</p>
             </div>
             <!-- <button type="button" class="btn btn-primary position-relative">
                 Inbox
@@ -259,177 +330,231 @@
           </div>
         </div>
       </div>
-      </div>
-       
-
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Explore Our Luxury Suites</h2>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://www.shutterstock.com/image-illustration/night-scene-modern-style-luxury-600nw-2427087969.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Elegant City View Suite</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="https://media.istockphoto.com/id/1428092971/photo/happy-family-getting-key-card-at-hotels-front-desk.jpg?s=612x612&w=0&k=20&c=JHxeMhPIEAKdT88slhyKGHEwJrZrLuBDuN-AfQ0lMlU=" alt="Guest Profile" width="32" height="32" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                            <small>Global</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                            <small>3 days ago</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://img.freepik.com/free-photo/modern-luxury-hotel-room-with-illuminated-electric-lamp-comfortable-bed-generated-by-artificial-intelligence_188544-150151.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Panoramic Suite with Sea View</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="https://www.thehotelindustry.com/wp-content/uploads/2023/01/DerekJeffersonRoyalSonestaNewOrleans2.jpeg" alt="Guest Profile" width="32" height="32" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                            <small>Pakistan</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                            <small>4 days ago</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://img.freepik.com/premium-photo/interior-dark-luxury-hotel-room-night_611456-85.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Luxury Penthouse Suite</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="https://as1.ftcdn.net/v2/jpg/05/75/90/54/1000_F_575905448_ypvPPhybICvKEAGrGJdIZjKmmWJrVX01.jpg" alt="Guest Profile" width="32" height="32" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                            <small>California</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                            <small>5 days ago</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
 
-<div class="container my-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Discover Serenity in Every Stay</h1>
-            <p class="lead">At Serenity Heaven Hotels, we offer a blend of luxury and tranquility, ensuring an unforgettable experience. Our modern amenities and elegant surroundings provide the perfect escape from the everyday.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Book Now</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Explore Our Luxury Suites</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://www.shutterstock.com/image-illustration/night-scene-modern-style-luxury-600nw-2427087969.jpg');">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Elegant City
+                View Suite</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://media.istockphoto.com/id/1428092971/photo/happy-family-getting-key-card-at-hotels-front-desk.jpg?s=612x612&w=0&k=20&c=JHxeMhPIEAKdT88slhyKGHEwJrZrLuBDuN-AfQ0lMlU="
+                    alt="Guest Profile" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use
+                      xlink:href="#geo-fill"></use></svg>
+                  <small>Global</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use
+                      xlink:href="#calendar3"></use></svg>
+                  <small>3 days ago</small>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://img.freepik.com/free-photo/modern-luxury-hotel-room-with-illuminated-electric-lamp-comfortable-bed-generated-by-artificial-intelligence_188544-150151.jpg');">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Panoramic Suite
+                with Sea View</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://www.thehotelindustry.com/wp-content/uploads/2023/01/DerekJeffersonRoyalSonestaNewOrleans2.jpeg"
+                    alt="Guest Profile" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use
+                      xlink:href="#geo-fill"></use></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use
+                      xlink:href="#calendar3"></use></svg>
+                  <small>4 days ago</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://img.freepik.com/premium-photo/interior-dark-luxury-hotel-room-night_611456-85.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Luxury Penthouse
+                Suite</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://as1.ftcdn.net/v2/jpg/05/75/90/54/1000_F_575905448_ypvPPhybICvKEAGrGJdIZjKmmWJrVX01.jpg"
+                    alt="Guest Profile" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use
+                      xlink:href="#geo-fill"></use></svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use
+                      xlink:href="#calendar3"></use></svg>
+                  <small>5 days ago</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div
+        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Discover
+            Serenity in Every Stay</h1>
+          <p class="lead">At Serenity Heaven Hotels, we offer a blend of luxury
+            and tranquility, ensuring an unforgettable experience. Our modern
+            amenities and elegant surroundings provide the perfect escape from
+            the everyday.</p>
+          <div
+            class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <button type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Book
+              Now</button>
+            <button type="button"
+              class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+          </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="https://media.licdn.com/dms/image/C5622AQHtCKCy0BI4PA/feedshare-shrink_800/0/1634913055902?e=2147483647&v=beta&t=f8VnJIV_L0KHKPCkngojlNSuntfaMBwPxWgydCrq6Aw" alt="Serenity Heaven Hotels" width="720">
+          <img class="rounded-lg-3"
+            src="https://media.licdn.com/dms/image/C5622AQHtCKCy0BI4PA/feedshare-shrink_800/0/1634913055902?e=2147483647&v=beta&t=f8VnJIV_L0KHKPCkngojlNSuntfaMBwPxWgydCrq6Aw"
+            alt="Serenity Heaven Hotels" width="720">
         </div>
+      </div>
     </div>
-</div>
 
+    <div class="container">
+      <h2 class="text-center display-1">Clients across the globe</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>id</td>
+            <td>Name</td>
+            <td>Category</td>
+            <td>Address</td>
+            <td>email</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Transcorp</td>
+            <td>Hotels</td>
+            <td>15.area2 street</td>
+            <td>abc@gmail.com</td>
+          </tr>
 
-      
-      <div class="container">
-        <h2 class="text-center display-1">Clients across the globe</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <td>id</td>
-                    <td>Name</td>
-                    <td>Category</td>
-                    <td>Address</td>
-                    <td>email</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Transcorp</td>
-                    <td>Hotels</td>
-                    <td>15.area2 street</td>
-                    <td>abc@gmail.com</td>
-                </tr>
- 
-                <tr>
-                    <td>2</td>
-                    <td>SilverBird</td>
-                    <td>Movies</td>
-                    <td>18. lagos street</td>
-                    <td>abc@gmail.com</td>
-                </tr>
+          <tr>
+            <td>2</td>
+            <td>SilverBird</td>
+            <td>Movies</td>
+            <td>18. lagos street</td>
+            <td>abc@gmail.com</td>
+          </tr>
 
-                <tr>
-                    <td>3</td>
-                    <td>SahadStores</td>
-                    <td>Shopping</td>
-                    <td>92. garki street</td>
-                    <td>abc@gmail.com</td>
-                </tr>   
-            </tbody>
-        </table>
+          <tr>
+            <td>3</td>
+            <td>SahadStores</td>
+            <td>Shopping</td>
+            <td>92. garki street</td>
+            <td>abc@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="container">
       <h2 class="display-2 text-center">Services We Provide</h2>
-      
+
       <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Spa and Wellness Retreat
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <strong>Spa and Wellness Retreat:</strong> Indulge in rejuvinating spa treatments and wellness programs to relax and rejuvenate
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Gourmet Dining Experience
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>Gourmet Dining Experience</strong> Delight your palate with exquisite culinary creations at our on-site resturants, offering a diverse range of flavors and cuisines.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Concierge Assistance
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>Concierge Assistance</strong> Our dedicated concierge team is available around the clock to assist you with personalized recommendations, reservations, and personalized recommendations, reservations, and any other assistance you may need during your Stay.
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              Spa and Wellness Retreat
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>Spa and Wellness Retreat:</strong> Indulge in rejuvinating
+              spa treatments and wellness programs to relax and rejuvenate
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              Gourmet Dining Experience
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Gourmet Dining Experience</strong> Delight your palate
+              with exquisite culinary creations at our on-site resturants,
+              offering a diverse range of flavors and cuisines.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              Concierge Assistance
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Concierge Assistance</strong> Our dedicated concierge team
+              is available around the clock to assist you with personalized
+              recommendations, reservations, and personalized recommendations,
+              reservations, and any other assistance you may need during your
+              Stay.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid">
@@ -447,89 +572,121 @@
       <h1 class="display-1 text-center fa-bold"> Meet With Us</h1>
       <form action="#" class="form_width">
         <div class="mb-2">
-            <label for="name" class="form-label">Name: </label>
-            <input type="text" class="form-control">
+          <label for="name" class="form-label">Name: </label>
+          <input type="text" class="form-control">
         </div>
 
         <div class="mb-2">
-            <label for="email" class="form-label">email: </label>
-            <input type="email" class="form-control">
+          <label for="email" class="form-label">email: </label>
+          <input type="email" class="form-control">
         </div>
 
         <div class="mb-2">
-            <label for="Phone" class="form-label">phone: </label>
-            <input type="number" class="form-control">
+          <label for="Phone" class="form-label">phone: </label>
+          <input type="number" class="form-control">
         </div>
 
         <div class="mb-2">
-            <label for="name" class="form-check-label">Check</label>
-            <input type="checkbox" class="form-check-input">
+          <label for="name" class="form-check-label">Check</label>
+          <input type="checkbox" class="form-check-input">
         </div>
 
         <button class="btn bg-success-subtle btn-block">SignUp</button>
-    </form>
+      </form>
     </div>
 
-<div class="container">
-  <footer class="py-5">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Explore</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Rooms & Suites</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Dining</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Spa & Wellness</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Services</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Concierge</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Room Service</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Event Planning</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Transportation</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gift Shop</a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Connect</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Press & Media</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sustainability</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Get the latest updates and special offers directly in your inbox.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Explore</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Rooms &
+                  Suites</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Dining</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Spa &
+                  Wellness</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">About Us</a></li>
+            </ul>
           </div>
-        </form>
-      </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Concierge</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Room Service</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Event
+                  Planning</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Transportation</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Gift Shop</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Connect</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Careers</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Press &
+                  Media</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Blog</a></li>
+              <li class="nav-item mb-2"><a href="#"
+                  class="nav-link p-0 text-body-secondary">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Get the latest updates and special offers directly in your
+                inbox.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email
+                  address</label>
+                <input id="newsletter1" type="text" class="form-control"
+                  placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Serenity Heaven Hotels. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg
+                  class="bi" width="24" height="24"><use
+                    xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg
+                  class="bi" width="24" height="24"><use
+                    xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg
+                  class="bi" width="24" height="24"><use
+                    xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>© 2024 Serenity Heaven Hotels. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-      </ul>
-    </div>
-  </footer>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
