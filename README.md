@@ -1,4 +1,4 @@
-# Serenity Haven Hotel Landing Page
+<!-- # Serenity Haven Hotel Landing Page
 
 Welcome to the **Serenity Haven Hotel** webpage! This project showcases a responsive and immersive layout, offering users a seamless experience to explore our services, book tours, and get in touch with us. 
 
@@ -54,4 +54,54 @@ Explore the live demo: [Serenity Haven Hotel](https://lawani-ej.github.io/landin
    ```
 3. Open `index5.html` in your browser to view the landing page.
 
+--- -->
+
+## Features Added Today
+
+### Signup Form
+- Collects user information such as:
+  - Full Name
+  - Email Address
+  - Password
+  - Password Confirmation
+- Includes:
+  - Password visibility toggle
+  - Required field validation
+
+### Login Form
+- Allows users to log in using their:
+  - Email Address
+  - Password
+- Features:
+  - Password visibility toggle
+  - Required field validation
+
+## Screenshots
+
+### Signup Form
+![Signup Form Screenshot](./assets/Screenshot%20(179).png)
+
+### Login Form
+![Login Form Screenshot](./assets/Screenshot%20(178).png)
+
+## Technologies Used
+- **HTML5**: For structuring the forms.
+- **CSS3**: Custom styling for a modern and user-friendly appearance.
+- **Bootstrap 5**: Ensuring responsiveness and ease of layout management.
+- **JavaScript**: To enable the password visibility toggle functionality.
+
+## Future Improvements
+- Backend integration for authentication.
+- Add "Forgot Password" functionality.
+- Mobile-first enhancements for smaller screens.
+
+## Contributing
+Feel free to fork the repository and submit pull requests with improvements or new features.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
 ---
+
+Happy coding! 🎉
+
