@@ -58,6 +58,63 @@ Explore the live demo: [Serenity Haven Hotel](https://lawani-ej.github.io/landin
 
 ## Features Added Today
 
+### Firebase Authentication and Form Validation
+![alt text](image.png)
+
+
+#### Firebase Authentication
+- User Registration
+  - Initializes Firebase using the provided Firebase configuration.
+  - Allows users to register with email and password.
+
+- User Login
+  - Validating user credentials against firebase authentication.
+
+
+## Features
+
+### Firebase Authentication
+- **User Registration**
+  - Initializes Firebase using the provided Firebase configuration.
+  - Allows users to register with email and password.
+
+- **User Login**
+  - Validates user credentials against Firebase Authentication.
+
+## Tools and Technologies
+
+- **Firebase**
+  - Firebase SDK for Authentication.
+  - Firestore for potential data storage.
+
+# Firebase Authentication and Form Validation Project
+
+This project demonstrates the implementation of Firebase Authentication for user registration and login functionalities, as well as client-side form validation for secure and user-friendly interactions.
+
+
+### Form Validation
+![alt text](image-1.png)
+
+- **Signup Form Validation**
+  - Validates input fields (name, email, password, and confirm password).
+  - Checks for valid email format.
+  - Ensures password length is at least 8 characters.
+  - Verifies that the password and confirm password fields match.
+
+- **Login Form Validation**
+  - Validates email format.
+  - Checks that the password length meets the required minimum.
+
+- **Error Display**
+  - Displays specific error messages for invalid inputs.
+  - Hides error messages when inputs are corrected.
+
+### Additional Features
+- **Toggle Password Visibility**
+  - Allows users to toggle between showing and hiding their passwords for convenience.
+
+
+<!-- 
 ### Signup Form
 - Collects user information such as:
   - Full Name
@@ -99,9 +156,7 @@ Explore the live demo: [Serenity Haven Hotel](https://lawani-ej.github.io/landin
 Feel free to fork the repository and submit pull requests with improvements or new features.
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License. See the `LICENSE` file for more details. -->
 
 ---
-
-Happy coding! 🎉
 
