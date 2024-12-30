@@ -41,6 +41,16 @@
         .btn-custom:hover {
             background-color: #148e62;
         }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            display: none;
+}
+
+.error-message.hidden{
+    display: inline;
+}
     </style>
 </head>
 <body>
@@ -51,17 +61,19 @@
                 <div class="col-xs-12">
                     <div class="form-wrap">
                         <h1>Log In to Your Account</h1>
-                        <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                        <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off" onsubmit="return loginValidate()">
                             <!-- Email -->
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" name="email" id="login-email" class="form-control" placeholder="Email Address">
+                                <small id="login-emailError" class="error-message"></small>
                             </div>
 
                             <!-- Password -->
                             <div class="form-group">
                                 <label for="password" class="sr-only">Password</label>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                <input type="password" name="password" id="login-password" class="form-control" placeholder="Password">
+                                <small id="login-passwordError" class="error-message"></small>
                             </div>
 
                             <!-- Show Password Checkbox -->
@@ -80,15 +92,7 @@
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </section>
-
-    <script>
-        function togglePasswordVisibility() {
-            const passwordField = document.getElementById('password');
-            const type = passwordField.type === 'password' ? 'text' : 'password';
-            passwordField.type = type;
-        }
-    </script>
-
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
