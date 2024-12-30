@@ -44,6 +44,16 @@
         .btn-custom:hover {
             background-color: #148e62;
         }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            display: none;
+}
+
+.error-message.hidden{
+    display: inline;
+}
     </style>
 </head>
 <body>
@@ -52,48 +62,43 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="form-wrap">
+                    <div class="form-wrap col-md-6 col-sm-12 mx-auto">
                         <h1>Create Your Account</h1>
-                        <form role="form" action="javascript:;" method="post" id="signup-form" autocomplete="off">
-                            <!-- Full Name -->
+                        <form role="form" action="javascript:;" method="post" id="signup-form" autocomplete="off" onsubmit="validateForm()">
                             <div class="form-group">
                                 <label for="name" class="sr-only">Full Name</label>
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" >
+                                <small id="fname-error" class="error-message"></small>
                             </div>
-
-                            <!-- Email -->
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                                <small id="emailError" class="error-message"></small>
                             </div>
-
-                            <!-- Password -->
                             <div class="form-group">
                                 <label for="password" class="sr-only">Password</label>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                                <small id="passwordError" class="error-message"></small>
                             </div>
-
-                            <!-- Confirm Password -->
                             <div class="form-group">
                                 <label for="confirm-password" class="sr-only">Confirm Password</label>
-                                <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm Password" required>
+                                <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm Password">
+                                <small id="confirmPasswordError" class="error-message"></small>
                             </div>
-
-                            <!-- Show Password Checkbox -->
                             <div class="checkbox">
                                 <input type="checkbox" id="show-password" onclick="togglePasswordVisibility()">
                                 <label for="show-password" class="ms-2">Show Password</label>
                             </div>
-
-                            <!-- Submit Button -->
                             <input type="submit" id="btn-signup" class="btn btn-custom btn-lg btn-block" value="Sign Up">
                         </form>
+                        
                         <p class="text-center mt-3">Already have an account? <a href="#">Log in here</a>.</p>
                     </div>
                 </div> <!-- /.col-xs-12 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </section>
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
