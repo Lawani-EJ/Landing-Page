@@ -61,18 +61,6 @@ Explore the live demo: [Serenity Haven Hotel](https://lawani-ej.github.io/landin
 ### Firebase Authentication and Form Validation
 ![alt text](image.png)
 
-
-#### Firebase Authentication
-- User Registration
-  - Initializes Firebase using the provided Firebase configuration.
-  - Allows users to register with email and password.
-
-- User Login
-  - Validating user credentials against firebase authentication.
-
-
-## Features
-
 ### Firebase Authentication
 - **User Registration**
   - Initializes Firebase using the provided Firebase configuration.
@@ -87,9 +75,8 @@ Explore the live demo: [Serenity Haven Hotel](https://lawani-ej.github.io/landin
   - Firebase SDK for Authentication.
   - Firestore for potential data storage.
 
-# Firebase Authentication and Form Validation Project
 
-This project demonstrates the implementation of Firebase Authentication for user registration and login functionalities, as well as client-side form validation for secure and user-friendly interactions.
+This feature of the  project demonstrates the implementation of Firebase Authentication for user registration and login functionalities, as well as client-side form validation for secure and user-friendly interactions.
 
 
 ### Form Validation
